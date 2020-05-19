@@ -12,18 +12,19 @@ global defaultI;
 global defaultd;
 global tableN;
 global tableFN;
-defaultN=250;
-defaultI=1;
+defaultN=9;
+defaultI=3000;
 defaultd=1;
 tableN=[];
 tableFN=[];
 %上下级版距离
 global LbtwUD;
-LbtwUD=200/1000;
+LbtwUD=15/1000;
 %ROI区域参数
 ROI_R=0.05;
 ROI_d=0.005;
 CoilsMatrix=numOfCoils(R,r);
+
 for i=1:size(CoilsMatrix,1)
     k=size(CoilsMatrix,1)-i+1;
     polar(CoilsMatrix(k,2),CoilsMatrix(k,1),'*');
